@@ -1,3 +1,12 @@
+2020 04 06 MV: 
+
+- CONTINUED work...
+- NEXT TASK: get inferences working with TPU (should increase FPS from 4-5 to well over 50 fps !)
+- COPIED TFLite_detection_webcam.py to TFLite_detection_webcam2.py 
+- EXAMINED code for possible pre-existence of TPU-enhanced inference (original author had promised this in late 2019 YouTube video)
+- IDENTIFIED several lines of code which indicated that tpu-enabled inference is a PARAMETER (argument) passed in when EXECUTING the python file !!!
+- RE-READ documentation 
+
 2020 04 01 MV:
 
 - FORKED this repo
@@ -6,14 +15,11 @@
 - TESTED & CONFIRMED connect from LOCAL repo /tflite01 back up to CLOUD (github.com) repo /markvogt/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi.git ==> WORKING :-) 
 - RENAMED project folder to /TFLite01
 - SFSG!
+- RAN $ python3 TFLite_detection_webcam.py
+- => SUCCESSFUL RUNNING !!! 4-5 fps, ran for 48 hrs non-stop with NO apparent ill effects to thing2 unit :-) 
+- SFSG !!!
 
-TODOs: 
-
-_x_ CONVERT ENTIRE PROJECT TO WORK IN A VIRTUAL (NOT system) PYTHON ENVIRONMENT !!!
-
-MV: ADDED this change as part of MVfeature01...
-
-
+==============================================================================
 
 
 
