@@ -6,6 +6,12 @@
 - EXAMINED code for possible pre-existence of TPU-enhanced inference (original author had promised this in late 2019 YouTube video)
 - IDENTIFIED several lines of code which indicated that tpu-enabled inference is a PARAMETER (argument) passed in when EXECUTING the python file !!!
 - RE-READ documentation 
+- LEARNED: apparently simply pass "--edgetpu" as additional argument when calling the .py file
+- EXAMPLE: (envTFLite01) pi@thing2:~/TFLite01 $ python3 TFLite_detection_webcam.py --modeldir=StarterODModel --edgetpu   <--- here!
+- TRIED... 
+- => THREW an error: "ValueError: Could not open '/home/pi/TFLite01/StarterODModel/edgetpu.tflite'."
+- APPARENTLY it's REQUIRED to TRAIN (or CONVERT?) an existing .tflite model to be an "EDGETPU.tflite" model ??? 
+- RESEARCHED documentation again... 
 
 2020 04 01 MV:
 
